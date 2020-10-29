@@ -2,27 +2,29 @@ body{
     padding:0;
     box-sizing:border-box ;
     margin: 0;
-    background: blue;
+    background: rgb(0,118,190);
+    
  }
  .navbar{
      color: white;
-     background-color: rgba(133, 133, 238, 0.75);
+     background: #0065c3;
      align-items: center;
-     height: 100px;
+     height: 80px;
      padding: 10px 0;
      display: flex;
      flex-direction: row;
      width: 100%;
+     position: sticky;
+     top: 0;
+ }
  
+ .nav-menu{
+     width:100%;
  }
  ul{
      display: flex;
      flex-direction: row;
  }
- /* .nav-menu{
-     display: flex;
-     flex-direction: row;
- } */
  li{
      list-style: none;   
  }
@@ -31,11 +33,13 @@ body{
      text-decoration: none;
      font-family: Arial, Helvetica, sans-serif;
      line-height: 1.5rem;
-     font-size: large;
+     font-size: 14px;
      padding: 1rem;
      display: flex;
      flex-direction: row;
- 
+     font-weight: bold;
+     text-transform: uppercase;
+     white-space: nowrap;
  }
  a:hover{
      opacity: 5;
@@ -43,15 +47,34 @@ body{
  }
  button{
       border-radius: 25px;
-      box-shadow: 15px  ;
+      border-color: white;
+      border-width:0.3rem;
       font-family: Arial, Helvetica, sans-serif;
       padding: 10px 10px 10px 10px;
       font-size: medium;
-      margin-left: 700px;
-      background-color: rgba(133, 133, 238, 0.75);
+      background: #0065c3;
       color: white;
+      font-weight: bold;
+      width: 15%;
   }
-  
+  .animated button:hover{
+      background: white;
+      color:blue ;
+      transform: rotate(60deg);
+ 
+  }
+  .logo-large{
+      padding: 1rem;
+      padding-left: 2rem;
+  }
+  .logo-large img{
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s linear;
+  }
+  .logo-large img:hover{
+      transform: rotate(180deg);
+  }
   .logo img{
       width: 40%;
   }
@@ -59,21 +82,92 @@ body{
       font-size: 30px;
       color: white;
   }
-  .two-cans img{
+  .two-cans{
       width: 100%;
-      height: 50%;
+      height: 10%;
   }
   
   .one-can img{
-      margin-left: 200px;
+      margin-left: 100px;
   }
   .one-can{
       background: black;
       color: white;
-      font-size: 50px;
+      
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
- 
+       display: flex;
+       flex-direction: row;
+       padding: 100px;
+  }
+  .one-can-text{
+      width: 50%;
+      font-size: 45px;
+  }
+  .one-can-image{
+      width: 50%;
+  }
+  .three-cans{
+     display: flex;
+     flex-direction: row;
+     padding: 200px;
+    
+  }
+  .three-cans-text{
+      width: 50%;
+  }
+  .three-cans h1{
+      color: white;
+      font-size: 60px;
+      font-family: Cervo Neue Black,
+       Helvetica Neue, Helvetica, Arial, 
+       sans-serif;
+       line-height: 60px;
+       letter-spacing: normal;
+  }
+  .three-cans button{
+      padding: 15px 5px 10px 5px;
+  }
+  .three-cans p{
+     color: white;
+     font-size: 15px;
+     font-family: Sofia Pro Re, Helvetica Neue,
+      Helvetica, Arial, sans-serif;
+  }
+  .three-cans img{
+      width: 700px;
+      height: 400px;
+  }
+  .three-cans-image{
+    /* margin-left: 50px; */
+    width: 50%;
+  }
+  .social{
+      background: whitesmoke;
+      color: #0065c3;
+      padding: 50px 0 50px 50px;
+     
+  }
+  .social-text{
+      text-align: center;
+      font-size: large;
+    
+  }
+  .social-image{
+      display: flex;
+      flex-direction:row;
+  }
+  .twitter{
+      width: 300px;   
+  }
+  .facebook{
+      width: 300px;
+  }
+  .instagram{
+      width: 300px;
+  }
+  .youtube{
+      width: 250px;
   }
   .footer{
      margin-bottom: 50;
@@ -89,5 +183,8 @@ body{
      grid-template-columns: repeat(3,1fr);
      line-height: 2rem;
      margin-left: 200px;
+  }
+  .footer button{
+      margin-left: 1000px;
   }
  
