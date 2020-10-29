@@ -46,6 +46,9 @@ body{
      opacity: 5;
       color: rgb(43, 43, 177);   
  }
+
+
+
  button{
       border-radius: 25px;
       border-color: white;
@@ -63,6 +66,7 @@ body{
       background: white;
       color:blue ;
       /* transform: rotate(60deg); */
+      transform: matrix(1,0,0,1,0,0 -32.016);
  
   }
   .logo-large{
@@ -128,9 +132,100 @@ body{
        line-height: 60px;
        letter-spacing: normal;
   }
-  .three-cans button{
-      /* padding: 25px; */
+  .three-cans ul{
+      padding: 0;
+      display: flex;
       width: 30%;
+      list-style: none;
+      border: 2px solid white;
+      padding: 5px 13px;
+      border-radius: 20px;
+      justify-content: center;
+      overflow: hidden;
+}
+
+
+ .three-cans ul li{
+     font-size: 18px;
+     color: white;
+     transition: .1s linear;
+
+ }
+ .three-cans ul:hover{
+
+    background-color: white;
+ }
+ .three-cans ul:hover li{
+     color: blue;
+    animation: swipe .3s;
+}
+@keyframes swipe{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .1;
+    transform: translatey(-20px);
+    }
+    51%{opacity: 0;
+         transform: translatey(20px);
+    }
+    100%{
+        opacity: 1;
+         transform: translatey(0px);
+
+    }
+
+}
+  .three-cans ul li:nth-child(1){
+
+    animation-delay: 0s;
+  }
+  .three-cans ul li:nth-child(2){
+
+    animation-delay: 20ms;
+
+  }
+  .three-cans ul li:nth-child(3){
+    animation-delay: 40ms;
+
+  }
+  .three-cans ul li:nth-child(4){
+    animation-delay: 60ms;
+
+    margin-right: 7px;
+  }
+  .three-cans ul li:nth-child(5){
+    animation-delay: 80ms;
+
+  }
+  .three-cans ul li:nth-child(6){
+    animation-delay: 100ms;
+
+  }
+  .three-cans ul li:nth-child(7){
+    animation-delay: 120ms;
+
+  }
+  .three-cans ul li:nth-child(8){
+    animation-delay: 140ms;
+
+  }
+  .three-cans ul li:nth-child(9){
+    animation-delay: 160ms;
+
+  }
+  .three-cans ul li:nth-child(10){
+    animation-delay: 180ms;
+
+  }
+  .three-cans ul li:nth-child(11){
+
+    animation-delay: 200ms;
+  }
+  .three-cans ul li:nth-child(12){
+    animation-delay: 220ms;
+
   }
   .three-cans p{
      color: white;
