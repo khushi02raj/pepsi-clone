@@ -243,8 +243,8 @@ body{
   }
   .social{
       background: whitesmoke;
-      color: #0065c3;
-      padding: 50px 50px 50px 50px;
+      color: #1071cc;
+      padding: 50px 50px;
       /* width: 100%; */
      
   }
@@ -259,14 +259,23 @@ body{
   }
 
   .social-image img{
-      width: 300px;
+      width: 350px;
   }
-   .twitter{
-    transition: transform 0.3s linear ease;   
+ .twitter img{
+    animation: animate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
-  .twitter:hover{
-    transform: 
-  }
+  @keyframes animate{
+0%{ #000000, opacity 0%}
+10%{#000000, opacity :70%}
+20%{#999999, opacity: 60.0%}
+30%{#101010, opacity:50% }
+50%{#000000, opacity: 0%}
+70%{#000000, opacity :70.0%}
+90%{#999999, opacity: 60.0%}
+100%{#101010, opacity :30.0%}
+  } 
 
  /* .facebook{
       width: 20%;
@@ -306,9 +315,11 @@ body{
      height: 100px;
     margin-top: 50px;
  }
- /* .foot-social{
-     display: inline;
- } */
+  .foot-social{
+     display: flex;
+     flex-direction: row;
+     margin-left: 1120px;   
+ } 
   footer button{
       margin-left: 1100px;
       width: 250px;
